@@ -13,7 +13,7 @@ class SearchCellPhoneController {
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
 		
-		def searchCellPhones = cellPhoneService.search(params.inputSearchNumber, params.inputSearchName)		
+		def searchCellPhones = cellPhoneService.search(params.inputSearchName)		
 		[cellPhoneInstanceList: searchCellPhones, cellPhoneInstanceTotal: searchCellPhones.size(), inputSearchName: params.inputSearchName]		
 	}
 }
