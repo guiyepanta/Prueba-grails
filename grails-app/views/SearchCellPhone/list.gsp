@@ -44,7 +44,7 @@
 					<g:each in="${cellPhoneInstanceList}" status="i" var="cellPhoneInstance">
 						<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 						
-							<td><g:link action="${request.forwardURI}/CellPhone/show" id="${cellPhoneInstance.id}">${fieldValue(bean: cellPhoneInstance, field: "number")}</g:link></td>
+							<td><g:link action="/show" id="${cellPhoneInstance.id}">${fieldValue(bean: cellPhoneInstance, field: "number")}</g:link></td>
 						
 							<td>${fieldValue(bean: cellPhoneInstance, field: "name")}</td>
 						
