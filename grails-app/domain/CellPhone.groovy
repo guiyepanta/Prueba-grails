@@ -1,10 +1,10 @@
 
 public class CellPhone {
 	 
-	Integer number;
-	String name;
-	CellPhoneModel model;
-	boolean receivesSummaryAccount;
+	Integer number
+	String name
+	CellPhoneModel model
+	boolean receivesSummaryAccount
 	
 	static constraints = {
 		number(length:10, min:1001)		
